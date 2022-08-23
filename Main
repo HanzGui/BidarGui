@@ -1,0 +1,425 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local bidar = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local EnterLocal = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local BidarText = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local Credits = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Information = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local ProBidar = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Milk = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local LocalGUI = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local Bidar = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local Fast = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Faster = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Evenfaster = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local NormalWS = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local JumpHigh = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local JumpHigher = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local NoJump = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local CWalkSpeed = Instance.new("TextBox")
+local UICorner_17 = Instance.new("UICorner")
+local CJumpPower = Instance.new("TextBox")
+local UICorner_18 = Instance.new("UICorner")
+local MilkGui = Instance.new("Frame")
+local CreditsFrame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Informationframe = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+bidar.Name = "bidar"
+bidar.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+bidar.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+bidar.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = bidar
+Main.BackgroundColor3 = Color3.fromRGB(210, 30, 255)
+Main.Position = UDim2.new(0.0242424235, 0, 0.0895741582, 0)
+Main.Size = UDim2.new(0.218181819, 0, 0.829662263, 0)
+
+UICorner.Parent = Main
+
+EnterLocal.Name = "EnterLocal"
+EnterLocal.Parent = Main
+EnterLocal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EnterLocal.Position = UDim2.new(0.027777778, 0, 0.152057245, 0)
+EnterLocal.Size = UDim2.new(0.444444448, 0, 0.089445442, 0)
+EnterLocal.Font = Enum.Font.SciFi
+EnterLocal.Text = "Local Player"
+EnterLocal.TextColor3 = Color3.fromRGB(0, 0, 0)
+EnterLocal.TextScaled = true
+EnterLocal.TextSize = 14.000
+EnterLocal.TextWrapped = true
+
+UICorner_2.Parent = EnterLocal
+
+BidarText.Name = "BidarText"
+BidarText.Parent = Main
+BidarText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BidarText.Position = UDim2.new(0.163888887, 0, 0.0107334526, 0)
+BidarText.Size = UDim2.new(0.669444442, 0, 0.119856887, 0)
+BidarText.Font = Enum.Font.SciFi
+BidarText.Text = "Bidar"
+BidarText.TextColor3 = Color3.fromRGB(0, 0, 0)
+BidarText.TextScaled = true
+BidarText.TextSize = 14.000
+BidarText.TextWrapped = true
+
+UICorner_3.Parent = BidarText
+
+Credits.Name = "Credits"
+Credits.Parent = Main
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.Position = UDim2.new(0.527777791, 0, 0.152057245, 0)
+Credits.Size = UDim2.new(0.444444448, 0, 0.089445442, 0)
+Credits.Font = Enum.Font.SciFi
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
+UICorner_4.Parent = Credits
+
+Information.Name = "Information"
+Information.Parent = Main
+Information.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Information.Position = UDim2.new(0.027777778, 0, 0.259391785, 0)
+Information.Size = UDim2.new(0.444444448, 0, 0.089445442, 0)
+Information.Font = Enum.Font.SciFi
+Information.Text = "Information"
+Information.TextColor3 = Color3.fromRGB(0, 0, 0)
+Information.TextScaled = true
+Information.TextSize = 14.000
+Information.TextWrapped = true
+
+UICorner_5.Parent = Information
+
+ProBidar.Name = "ProBidar"
+ProBidar.Parent = Main
+ProBidar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ProBidar.Position = UDim2.new(0.527777791, 0, 0.259391785, 0)
+ProBidar.Size = UDim2.new(0.444444448, 0, 0.089445442, 0)
+ProBidar.Font = Enum.Font.SciFi
+ProBidar.Text = "Pro Bidar Mode"
+ProBidar.TextColor3 = Color3.fromRGB(0, 0, 0)
+ProBidar.TextScaled = true
+ProBidar.TextSize = 14.000
+ProBidar.TextWrapped = true
+
+UICorner_6.Parent = ProBidar
+
+Milk.Name = "Milk"
+Milk.Parent = Main
+Milk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Milk.Position = UDim2.new(0.027777778, 0, 0.366726309, 0)
+Milk.Size = UDim2.new(0.444444448, 0, 0.089445442, 0)
+Milk.Font = Enum.Font.SciFi
+Milk.Text = "Milk"
+Milk.TextColor3 = Color3.fromRGB(0, 0, 0)
+Milk.TextScaled = true
+Milk.TextSize = 14.000
+Milk.TextWrapped = true
+
+UICorner_7.Parent = Milk
+
+LocalGUI.Name = "LocalGUI"
+LocalGUI.Parent = bidar
+LocalGUI.BackgroundColor3 = Color3.fromRGB(210, 30, 255)
+LocalGUI.Position = UDim2.new(0.845454574, 0, 0.0264317188, 0)
+LocalGUI.Size = UDim2.new(0.130303025, 0, 0.945668161, 0)
+LocalGUI.Visible = false
+
+UICorner_8.Parent = LocalGUI
+
+Bidar.Name = "Bidar"
+Bidar.Parent = LocalGUI
+Bidar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bidar.Position = UDim2.new(0.0325581394, 0, 0.023291925, 0)
+Bidar.Size = UDim2.new(0.930232525, 0, 0.110248446, 0)
+Bidar.Font = Enum.Font.SciFi
+Bidar.Text = "Bidar"
+Bidar.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bidar.TextScaled = true
+Bidar.TextSize = 14.000
+Bidar.TextWrapped = true
+
+UICorner_9.Parent = Bidar
+
+Fast.Name = "Fast"
+Fast.Parent = LocalGUI
+Fast.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fast.Position = UDim2.new(0.0329999998, 0, 0.156608716, 0)
+Fast.Size = UDim2.new(0.930232525, 0, 0.0776397511, 0)
+Fast.Font = Enum.Font.SciFi
+Fast.Text = "Fast"
+Fast.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fast.TextScaled = true
+Fast.TextSize = 14.000
+Fast.TextWrapped = true
+
+UICorner_10.Parent = Fast
+
+Faster.Name = "Faster"
+Faster.Parent = LocalGUI
+Faster.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Faster.Position = UDim2.new(0.0329999998, 0, 0.249776423, 0)
+Faster.Size = UDim2.new(0.930232525, 0, 0.0776397511, 0)
+Faster.Font = Enum.Font.SciFi
+Faster.Text = "Faster"
+Faster.TextColor3 = Color3.fromRGB(0, 0, 0)
+Faster.TextScaled = true
+Faster.TextSize = 14.000
+Faster.TextWrapped = true
+
+UICorner_11.Parent = Faster
+
+Evenfaster.Name = "Even faster"
+Evenfaster.Parent = LocalGUI
+Evenfaster.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Evenfaster.Position = UDim2.new(0.0329999998, 0, 0.342944115, 0)
+Evenfaster.Size = UDim2.new(0.930232525, 0, 0.0776397511, 0)
+Evenfaster.Font = Enum.Font.SciFi
+Evenfaster.Text = "Even faster"
+Evenfaster.TextColor3 = Color3.fromRGB(0, 0, 0)
+Evenfaster.TextScaled = true
+Evenfaster.TextSize = 14.000
+Evenfaster.TextWrapped = true
+
+UICorner_12.Parent = Evenfaster
+
+NormalWS.Name = "NormalWS"
+NormalWS.Parent = LocalGUI
+NormalWS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NormalWS.Position = UDim2.new(0.0329999998, 0, 0.436111808, 0)
+NormalWS.Size = UDim2.new(0.930232525, 0, 0.0776397511, 0)
+NormalWS.Font = Enum.Font.SciFi
+NormalWS.Text = "Normal fast"
+NormalWS.TextColor3 = Color3.fromRGB(0, 0, 0)
+NormalWS.TextScaled = true
+NormalWS.TextSize = 14.000
+NormalWS.TextWrapped = true
+
+UICorner_13.Parent = NormalWS
+
+JumpHigh.Name = "JumpHigh"
+JumpHigh.Parent = LocalGUI
+JumpHigh.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumpHigh.Position = UDim2.new(0.028348837, 0, 0.526173949, 0)
+JumpHigh.Size = UDim2.new(0.930232525, 0, 0.0776397511, 0)
+JumpHigh.Font = Enum.Font.SciFi
+JumpHigh.Text = "Jump high"
+JumpHigh.TextColor3 = Color3.fromRGB(0, 0, 0)
+JumpHigh.TextScaled = true
+JumpHigh.TextSize = 14.000
+JumpHigh.TextWrapped = true
+
+UICorner_14.Parent = JumpHigh
+
+JumpHigher.Name = "JumpHigher"
+JumpHigher.Parent = LocalGUI
+JumpHigher.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumpHigher.Position = UDim2.new(0.028348837, 0, 0.619341671, 0)
+JumpHigher.Size = UDim2.new(0.930232525, 0, 0.0776397511, 0)
+JumpHigher.Font = Enum.Font.SciFi
+JumpHigher.Text = "Jump higher"
+JumpHigher.TextColor3 = Color3.fromRGB(0, 0, 0)
+JumpHigher.TextScaled = true
+JumpHigher.TextSize = 14.000
+JumpHigher.TextWrapped = true
+
+UICorner_15.Parent = JumpHigher
+
+NoJump.Name = "NoJump"
+NoJump.Parent = LocalGUI
+NoJump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NoJump.Position = UDim2.new(0.028348837, 0, 0.712509394, 0)
+NoJump.Size = UDim2.new(0.930232525, 0, 0.0776397511, 0)
+NoJump.Font = Enum.Font.SciFi
+NoJump.Text = "No jump lol"
+NoJump.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoJump.TextScaled = true
+NoJump.TextSize = 14.000
+NoJump.TextWrapped = true
+
+UICorner_16.Parent = NoJump
+
+CWalkSpeed.Name = "CWalkSpeed"
+CWalkSpeed.Parent = LocalGUI
+CWalkSpeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CWalkSpeed.Position = UDim2.new(0.0325581431, 0, 0.805900633, 0)
+CWalkSpeed.Size = UDim2.new(0.930232644, 0, 0.0776397511, 0)
+CWalkSpeed.Font = Enum.Font.SciFi
+CWalkSpeed.Text = "Enter Custom WalkSpeed"
+CWalkSpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+CWalkSpeed.TextScaled = true
+CWalkSpeed.TextSize = 14.000
+CWalkSpeed.TextWrapped = true
+
+UICorner_17.Parent = CWalkSpeed
+
+CJumpPower.Name = "CJumpPower"
+CJumpPower.Parent = LocalGUI
+CJumpPower.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CJumpPower.Position = UDim2.new(0.0325581431, 0, 0.895962715, 0)
+CJumpPower.Size = UDim2.new(0.930232644, 0, 0.0776397511, 0)
+CJumpPower.Font = Enum.Font.SciFi
+CJumpPower.Text = "Enter custom JumpPower"
+CJumpPower.TextColor3 = Color3.fromRGB(0, 0, 0)
+CJumpPower.TextScaled = true
+CJumpPower.TextSize = 14.000
+CJumpPower.TextWrapped = true
+
+UICorner_18.Parent = CJumpPower
+
+MilkGui.Name = "MilkGui"
+MilkGui.Parent = bidar
+MilkGui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MilkGui.BorderSizePixel = 0
+MilkGui.ClipsDescendants = true
+MilkGui.Size = UDim2.new(1.060606, 0, 1.14684284, 0)
+MilkGui.Visible = false
+
+CreditsFrame.Name = "CreditsFrame"
+CreditsFrame.Parent = bidar
+CreditsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsFrame.Position = UDim2.new(0.599999964, 0, 0.220264316, 0)
+CreditsFrame.Size = UDim2.new(0.170909092, 0, 0.414096922, 0)
+CreditsFrame.Visible = false
+
+TextLabel.Parent = CreditsFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(0.145390064, 0, 0.37588653, 0)
+TextLabel.Size = UDim2.new(0.709219873, 0, 0.177304968, 0)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "only dev Fjaril77, now stfu"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+Informationframe.Name = "Information frame"
+Informationframe.Parent = bidar
+Informationframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Informationframe.Position = UDim2.new(0.304848462, 0, 0.220264316, 0)
+Informationframe.Size = UDim2.new(0.170909092, 0, 0.414096922, 0)
+Informationframe.Visible = false
+
+TextLabel_2.Parent = Informationframe
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.Position = UDim2.new(0.145390064, 0, 0.37588653, 0)
+TextLabel_2.Size = UDim2.new(0.709219873, 0, 0.177304968, 0)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "RMB, LMB, LEFT CTRL, LEFT ALT"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+
+
+
+Main.Active = true
+LocalGUI.Active = true
+Main.Draggable = true
+LocalGUI.Draggable = true
+
+
+EnterLocal.MouseButton1Click:Connect(function()
+	if LocalGUI.Visible == false then
+		LocalGUI.Visible = true
+	end
+end)
+
+EnterLocal.MouseButton2Click:Connect(function()
+	if LocalGUI.Visible == true then
+		LocalGUI.Visible = false
+	end
+end)
+
+
+
+local UserInputService = game:GetService("UserInputService")
+
+
+UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+	if input.UserInputType == Enum.UserInputType.Keyboard then
+
+		if input.KeyCode == Enum.KeyCode.LeftAlt then
+			Main.Visible = false
+		end
+
+	end
+end)
+
+
+
+
+UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+	if input.UserInputType == Enum.UserInputType.Keyboard then
+
+		if input.KeyCode == Enum.KeyCode.LeftControl then
+			Main.Visible = true
+		end
+	end
+end)
+
+
+--- Local player
+
+NormalWS.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+Fast.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 500
+end)
+
+Faster.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 5000
+end)
+
+Evenfaster.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 10000
+end)
+
+JumpHigh.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 300
+end)
+
+JumpHigh.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 500
+end)
+
+JumpHigh.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 1000
+end)
+
+NoJump.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 0
+end)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = CWalkSpeed.Text
+
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = CJumpPower.Text
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+
