@@ -334,14 +334,6 @@ TextLabel_2.Text = "RMB, LMB, LEFT CTRL, LEFT ALT"
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.TextSize = 14.000
 
-Sound.Name = Sound
-Sound.SoundId = "rbxassetid://9170943754"
-Sound.Looped = true
-Sound.PlaybackSpeed = 0.6
-Sound.RollOffMaxDistance = 10000
-Sound.RollOffMinDistance = 10
-Sound.RollOffMode = "Inverse"
-Sound.Parent = Milk
 
 
 
@@ -353,15 +345,11 @@ LocalGUI.Draggable = true
 
 
 EnterLocal.MouseButton1Click:Connect(function()
-	if LocalGUI.Visible == false then
 		LocalGUI.Visible = true
-	end
 end)
 
 EnterLocal.MouseButton2Click:Connect(function()
-	if LocalGUI.Visible == true then
 		LocalGUI.Visible = false
-	end
 end)
 
 
