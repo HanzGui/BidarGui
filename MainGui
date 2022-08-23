@@ -2,7 +2,7 @@
 -- Version: 3.2
 
 -- Instances:
-
+local Sound = Instance.new("Sound")
 local bidar = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -334,6 +334,15 @@ TextLabel_2.Text = "RMB, LMB, LEFT CTRL, LEFT ALT"
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.TextSize = 14.000
 
+Sound.Name = Sound
+Sound.SoundId = "rbxassetid://9170943754"
+Sound.Looped = true
+Sound.PlaybackSpeed = 0.6
+Sound.RollOffMaxDistance = 10000
+Sound.RollOffMinDistance = 10
+Sound.RollOffMode = "Inverse"
+Sound.Parent = Milk
+
 
 
 
@@ -415,6 +424,32 @@ end)
 
 NoJump.MouseButton1Click:Connect(function()
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 0
+end)
+
+Milk.MouseButton1Click:Connect(function()
+	MilkGui.Visible = true
+	Sound.IsPlaying = true
+end)
+
+ProBidar.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100000000000000
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100000000000000
+end)
+
+Information.MouseButton1Click:Connect(function()
+	Informationframe = true
+end)
+
+Information.MouseButton2Click:Connect(function()
+	Informationframe = false
+end)
+
+Credits.MouseButton1Click:Connect(function()
+	CreditsFrame.Visible = true
+end)
+
+Credits.MouseButton2Click:Connect(function()
+	CreditsFrame.Visible = false
 end)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = CWalkSpeed.Text
